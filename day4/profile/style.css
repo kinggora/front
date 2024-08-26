@@ -1,0 +1,74 @@
+/* body 스타일 태그 */
+body {
+    background-color: #b0ffd8;
+    padding-top: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* card 스타일 태그 */
+.card {
+    background-color: #fff;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 2rem;
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+/* banner 스타일 태그 */
+.banner {
+    background-image: url("img/backgound.jpg");
+    display: flex;
+    justify-content: center;
+}
+/* profile 스타일 태그 */
+.profile {
+    width: 8rem;
+    height: 8rem;
+    background-image: url("img/mangom.jpeg");
+    background-size: 120px;
+    border-radius: 50%;
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: translateY(50%);
+    transition: transform 200ms cubic-bezier(0.18, 0.89, 0.32, 0.8)
+}
+.profile:hover {
+    transform: scale(1.1);
+}
+
+/* name 스타일 태그 */ 
+.name {
+    text-align: center;
+    padding-top: 60px;
+}
+
+/* follow-btn 스타일 태그 */ 
+.follow-btn {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* follow-btn 자식 스타일 태그 */ 
+.follow-btn button {
+    font-size: medium;
+    font-weight: bold;
+    background-color: #b0ffd8;
+    border: none;
+    padding: 1rem;
+    outline: none;
+    border-radius: 50px;
+}
+
+.follow-btn button:hover {
+    background-color: rgb(138, 212, 255);
+    transform: scale(1.1);
+}
+
+/* description 스타일 태그 */
+.desc {
+    padding: 1.7rem;
+}
