@@ -1,0 +1,77 @@
+@import "./global.css";
+
+.user-component {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 100px;
+}
+.user-component__profile {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.user-component__id {
+    text-align: center;
+}
+
+.add-profile-btn {
+    width: 5rem;
+    height: 5rem;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.continue-watching__imges img {
+    width: 150px;
+    border-radius: 15px;
+}
+.continue-watching {
+  margin: 0 100px;
+}
+.continue-watching__imges {
+    margin-top: 5px;
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+}
+.continue-watching__card {
+  
+}
+.continue-watching__header {
+  
+}
+.continue-watching__imges li {
+ 
+}
+.continue-watching__title {
+  
+}
+
+.wishlist__img {
+  
+}
+.wishlist__header {
+  
+}
+.wishlist-item {
+ 
+}
+.wishlist-info {
+ 
+}
+.wishlist-info {
+  
+}
+.wishlist__title {
+  
+.wishlist__subtitle {
+  
+}
+.wishlist-play-btn span {
+  
+}
+.wishlist {
+ 
+}
