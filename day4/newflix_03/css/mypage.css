@@ -24,20 +24,25 @@
 }
 
 .continue-watching__imges img {
-    width: 150px;
     border-radius: 15px;
+    width: 150px;
+    display: flex;
 }
 .continue-watching {
   margin: 0 100px;
 }
+
 .continue-watching__imges {
-    margin-top: 5px;
     list-style: none;
     display: flex;
     overflow-x: auto;
 }
+
 .continue-watching__card {
-  
+    background-color: var(--purple);
+    width: 200px;
+    justify-content: center;
+    border-radius: 15px;
 }
 .continue-watching__header {
   
@@ -46,7 +51,7 @@
  
 }
 .continue-watching__title {
-  
+  font-size: 1rem;
 }
 
 .wishlist__img {
