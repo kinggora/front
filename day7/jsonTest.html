@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let user = {
+            name: 'John',
+            age: 30,
+            isAdmin: false,
+            company: 'SSG&INC',
+            auth: ['user', 'teamLeader'],
+            married: null,
+            toString() {
+                return `{name: ${this.name}, age: ${this.age}, company: ${this.company}}`;
+            }
+        };
+        // console.log(user); // Object
+        // alert(user); // toString()
+
+        let jsonUser = JSON.stringify(user);
+        console.log(jsonUser); // {"name":"John","age":30,"isAdmin":false,"company":"SSG&INC","auth":["user","teamLeader"],"married":null}
+        console.log(typeof jsonUser); // String
+        console.log(JSON.parse(jsonUser));
+
+        function factorial(n) {
+            if (n <= 1) {
+                return 1;
+            }
+            return n * factorial(n-1);
+        }
+
+        function factorialWhile(n) {
+            let result = 1;
+            while(n > 0) {
+                result *= n;
+                n = n - 1;
+            }
+            return result;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

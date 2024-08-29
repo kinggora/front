@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let name = prompt("당신의 이름을 입력해주세요.");
+        alert(name);
+
+        let status = ['I', 'am', 'happy'];
+        const index = status.indexOf('am');
+        //delete status[index]; // 해당 공간의 값은 지우지만 배열의 길이는 줄어들지 않음
+        status.splice(index, 1);
+        status.forEach(s => console.log(s)); // I, happy
+        console.log(status.length); // 2
+
+        let keyword = ['I', 'study', 'javascript', 'right', 'now'];
+        let remove = keyword.splice(0, 2);
+        keyword.forEach(k => console.log(k));
+        let update = keyword.splice(2, 0, 'i', 'play');
+        alert(keyword); // javascript, right, i, play, now
+        console.log(update);
+
+        let unsigned = keyword.splice(-2, 0, 'lala', 'Ooops');
+        alert(keyword); // javascript, right, i, lala, Ooops, play, now
+
+        let numberSet = [1,2];
+        alert(numberSet);
+        alert(numberSet.concat([3,4]));
+        let numberSet2 = numberSet.concat([5,6]);
+        numberSet2.forEach(alert);
+        numberSet2.forEach((item, index, array) => {
+            alert(`${item} is at index ${index} in ${array}`);
+        });
+
+        const dummy = [NaN];
+        console.log(dummy.indexOf(NaN)); // -1
+        console.log(dummy.includes(NaN)); // true
+
+        let length = ['I', 'am', 'Happy']
+            .map(item => item.length); // 배열로 만들어 반환. [1,2,5]
+        console.log(length);
+
+        let numArr = [2,15,1];
+        function compareNumber(n1, n2) {
+            if(n1 > n2) {
+                return 1;
+            }
+            if(n1 == n2) {
+                return 0;
+            }
+            if(n1 < n2) {
+                return -1;
+            }
+        }
+        numArr.sort(compareNumber);
+        alert(numArr); // 1,2,15
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
