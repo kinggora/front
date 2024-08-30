@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 코드 평가 -> 런타임
+
+        // 전역변수 (전역 스코프)
+        const num1 = 10;
+        const num2 = 20;
+
+        // 함수 (지역 스코프)
+        function func1(number) {
+            const num1 = 10;
+            const num2 = 20;
+            console.log(number + num1 + num2); // 실행 컨텍스트 참조
+        }
+
+        // 함수 호출 (내가 만든 함수)
+        func1(100);
+
+        // 메서드 호출 (엔진에서 제공하는 함수)
+        console.log(num1 + num2);
+    </script>
+</body>
+</html>
